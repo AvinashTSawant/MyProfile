@@ -4,8 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Contaus</title>
+    <style>
+           *{
+              font-family: 'Roboto Slab', serif;
+            }
+
+            label{
+              color: deeppink;
+              font-size: x-large;
+
+            }
+            input{
+               width: 400px;
+               height: 25px;
+               border-radius: 10px;
+               border: 1px solid burlywwod;
+              
+           
+            }
+            input[type="text"]
+            {
+              text-transform: capitalize;
+              color: cadetblue;
+            }
+            input[type="email"]
+            {
+              color: rgb(236, 14, 25);
+            }
+        
+            #submit:hover{
+              background-color: darkblue;
+
+            }
+            button[type="submit"]:hover{
+             color: rgb(250, 6, 6);
+
+            }
+    </style>
   </head>
+
   <body>
     <h3>Contaus Us</h3>
     <form>
@@ -13,7 +54,7 @@
       <table>
         <tbody>
           <tr>
-            <td><label for="firstName" ><strong> Name:-</strong></label></td>
+            <td><label for="firstName" ><strong>  Full Name:-</strong></label></td>
             <td><input type="text" id="firstname" placeholder="Max Character Length=40"></td>
           </tr>
         
@@ -24,16 +65,16 @@
 
           <tr>
             <td><label for="Email"><strong>Email</strong>  </label></td>
-            <td><input type="text" id="Email" required   placeholder="Ex.abc@gmail.com"/></td>
+            <td><input type="email" id="Email" required   placeholder="Ex.abc@gmail.com"/></td>
           </tr>
 
             <tr>
-                <td><strong>Euquiry</strong> </td>
+                <td><label><strong>Euquiry</strong></label> </td>
                 <td> <textarea rows="5" cols="25"></textarea></td>
             </tr>
 
           <tr>
-                <td><button type="submit">submit</button></td>
+                <td><button  id="submit">submit</button></td>
                 <td><button type="submit">Clear </button></td>
                  <td></td>
           </tr>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto Slab', serif;
+
+        }
+        label{
+                color:orangered;
+                font-size: x-large;
+            
+            }
+        input{
+                width: 400px;
+                height: 25px;
+                border-radius: 10px;
+                border: 1px solid burlywood;
+            }
+            input[type="text"]{
+                text-transform: capitalize;
+                color: brown;
+            }
+            input[type="email"]{
+                color:seagreen;
+            }
+            input[type="number"]{
+                color: palegreen;
+            }
+             #submit:hover{
+                background-color: burlywood;
+            }
+            button[type="clear"]:hover{
+                color: blueviolet;
+            }
+
+
+        </style>
+        
+</head>
+<body>
+    <h3>Contact Us</h3>
+    <form>
+       <table>
+          <tbody>
+            <tr>
+                <td> <label for="fullName"><b>Full Name:</b></label></td>
+                <td><input type="text" id="fullName"></td>
+            </tr>
+            <tr>
+                <td><label for="mobileNo"><b>Mobile No:</b></label></td>
+                <td><input type="number" id="mobileNo"></td>
+            </tr>
+            <tr>
+                <td><label><b>Email:</b></label></td>
+                <td><input type="email" placeholder="Ex.abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><b><label>Enquiry:</label></b></td>
+                <td> <textarea rows="7" cols="25"> </textarea> </td>
+            </tr>
+            <tr>
+                <td><button type="submit" id="submit">Submit</td>
+                <td><button type="clear">clear</button></td>
+            </tr>
+       
+          </tbody>
+       </table>
+    </form>
+</body>
+</html>
